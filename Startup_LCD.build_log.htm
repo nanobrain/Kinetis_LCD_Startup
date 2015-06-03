@@ -1,0 +1,110 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: asdasd adw, asd, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.13.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      UL2CM3.DLL V1.154.12.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+C:\Users\dude\Documents\GitHub\STARTUP\Startup_LCD.uvprojx
+Project File Date:  06/01/2015
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling HD44780.c...
+Listings\HD44780.h(23): error:  #40: expected an identifier
+  void LCD_SetInput();
+Listings\HD44780.h(24): error:  #40: expected an identifier
+  void LCD_SetOutput();
+Listings\HD44780.h(25): error:  #20: identifier "u_char" is undefined
+  u_char LCD_ReadNibble(void);
+Listings\HD44780.h(26): error:  #20: identifier "u_char" is undefined
+  u_char LCD_CheckStatus(void);
+Listings\HD44780.h(27): error:  #20: identifier "u_char" is undefined
+  void LCD_WriteNibble(u_char Data);
+Listings\HD44780.h(28): error:  #20: identifier "u_char" is undefined
+  void LCD_WriteData(u_char DataToWrite);
+Listings\HD44780.h(29): error:  #20: identifier "u_char" is undefined
+  void LCD_WriteText(u_char * text);
+Listings\HD44780.h(30): error:  #20: identifier "u_char" is undefined
+  void LCD_WriteCommand(u_char command);
+Listings\HD44780.h(32): warning:  #1-D: last line of file ends without a newline
+  #endif
+Listings\HD44780.c(27): error:  #40: expected an identifier
+  void LCD_SetInput() {
+Listings\HD44780.c(27): error:  #65: expected a ";"
+  void LCD_SetInput() {
+Listings\HD44780.c(125): warning:  #12-D: parsing restarts here after previous syntax error
+        LCD_WriteCommand((u_char)LCD_FSET);
+Listings\HD44780.c(126): error:  #79: expected a type specifier
+        Cpu_Delay100US(1);                              // 100us, minimum 39us
+Listings\HD44780.c(126): warning:  #77-D: this declaration has no storage class or type specifier
+        Cpu_Delay100US(1);                              // 100us, minimum 39us
+Listings\HD44780.c(128): error:  #79: expected a type specifier
+        LCD_WriteCommand((u_char)LCD_FSET);
+Listings\HD44780.c(128): warning:  #77-D: this declaration has no storage class or type specifier
+        LCD_WriteCommand((u_char)LCD_FSET);
+Listings\HD44780.c(128): error:  #147: declaration is incompatible with "void LCD_WriteCommand(<error-type>)" (declared at line 30 of "Listings\HD44780.h")
+        LCD_WriteCommand((u_char)LCD_FSET);
+Listings\HD44780.c(129): error:  #79: expected a type specifier
+        Cpu_Delay100US(1);                              // 100us, minimum 37us
+Listings\HD44780.c(129): warning:  #77-D: this declaration has no storage class or type specifier
+        Cpu_Delay100US(1);                              // 100us, minimum 37us
+Listings\HD44780.c(131): error:  #79: expected a type specifier
+        LCD_WriteCommand((u_char)LCD_OFFON);
+Listings\HD44780.c(131): warning:  #77-D: this declaration has no storage class or type specifier
+        LCD_WriteCommand((u_char)LCD_OFFON);
+Listings\HD44780.c(132): error:  #79: expected a type specifier
+        Cpu_Delay100US(1);                              // 100us, minimum 37us
+Listings\HD44780.c(132): warning:  #77-D: this declaration has no storage class or type specifier
+        Cpu_Delay100US(1);                              // 100us, minimum 37us
+Listings\HD44780.c(134): error:  #79: expected a type specifier
+        LCD_WriteCommand((u_char)LCD_CLR);
+Listings\HD44780.c(134): warning:  #77-D: this declaration has no storage class or type specifier
+        LCD_WriteCommand((u_char)LCD_CLR);
+Listings\HD44780.c(135): error:  #79: expected a type specifier
+        Cpu_Delay100US(20);                             // 2ms, minimum 1.54ms
+Listings\HD44780.c(135): warning:  #77-D: this declaration has no storage class or type specifier
+        Cpu_Delay100US(20);                             // 2ms, minimum 1.54ms
+Listings\HD44780.c(137): error:  #79: expected a type specifier
+        LCD_WriteCommand((u_char)LCD_EMODE);
+Listings\HD44780.c(137): warning:  #77-D: this declaration has no storage class or type specifier
+        LCD_WriteCommand((u_char)LCD_EMODE);
+Listings\HD44780.c(138): error:  #79: expected a type specifier
+        Cpu_Delay100US(1);                              // 100us (O tym dokumentacja nie wspomina³a....)
+Listings\HD44780.c(138): warning:  #77-D: this declaration has no storage class or type specifier
+        Cpu_Delay100US(1);                              // 100us (O tym dokumentacja nie wspomina³a....)
+Listings\HD44780.c(141): warning:  #1-D: last line of file ends without a newline
+  }
+Listings\HD44780.c(141): error:  #169: expected a declaration
+  }
+Listings\HD44780.c: 12 warnings, 21 errors
+compiling main.c...
+assembling startup_MKL25Z4.s...
+compiling system_MKL25Z4.c...
+".\Objects\Startup_LCD.axf" - 21 Error(s), 12 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\dude\Documents\GitHub\STARTUP\RTE
+  D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>
