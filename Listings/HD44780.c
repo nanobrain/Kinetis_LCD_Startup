@@ -5,48 +5,34 @@
 ** ###################################################################*/
 //----1----2----3----4----5----6----7-10----11--12--13--14--15----16--LCD
 //-------------------E05--E20--E21-NC--NC---E22-E23-E29-E30-----------Kinetis
-//---Vss--Vcc--Vee---Rs---Re---E---DB0-DB3--DB4-DB5-DB6-DB7-LED+--LED-
+//---Vss--Vcc--Vee---Rs---Rw---E---DB0-DB3--DB4-DB5-DB6-DB7-LED+--LED-
 
 #include "fsl_device_registers.h"
 #include "Declarations.h"
 #include "HD44780.h"
 
-#define D5	(22) // PORT E
-#define D6	(23)
-#define D7	(29)
-#define D8	(30)
-#define E		(21)
-#define RS	(5)
-#define RW	(20)
-#define MASK(x) (1UL << (x))
-
-#define E_PutVal(value) 	PTE->PDOR  =  (value ? PTE->PDOR | MASK(E): PTE->PDOR & ~MASK(E))
-#define RS_PutVal(value) 	PTE->PDOR  =  (value ? PTE->PDOR | MASK(RW): PTE->PDOR & ~MASK(RW))
-#define RW_PutVal(value) 	PTE->PDOR  =  (value ? PTE->PDOR | MASK(RS): PTE->PDOR & ~MASK(RS))
-#define Set_Input  				PTE->PDDR &= ~MASK(D5) & ~MASK(D6) & ~MASK(D7) & ~MASK(D8)
-#define Set_Output 				PTE->PDDR |=  MASK(D5) |  MASK(D6) |  MASK(D7)|  MASK(D8)
-
 void LCD_IO_PutVal(uint8_t val)
 {
-	PTE->PDOR=(val&(MASK(D5)) ? PTE->PDOR | MASK(D5): PTE->PDOR & ~MASK(D5));
-	PTE->PDOR=(val&(MASK(D6)) ? PTE->PDOR | MASK(D6): PTE->PDOR & ~MASK(D6));
-	PTE->PDOR=(val&(MASK(D7)) ? PTE->PDOR | MASK(D7): PTE->PDOR & ~MASK(D7));
-	PTE->PDOR=(val&(MASK(D8)) ? PTE->PDOR | MASK(D8): PTE->PDOR & ~MASK(D8));
+	(void)((val & MASK(0)) ? (PTE->PSOR |= MASK(D4)): (PTE->PCOR |= MASK(D4)));
+	(void)((val & MASK(1)) ? (PTE->PSOR |= MASK(D5)): (PTE->PCOR |= MASK(D5)));
+	(void)((val & MASK(2)) ? (PTE->PSOR |= MASK(D6)): (PTE->PCOR |= MASK(D6)));
+	(void)((val & MASK(3)) ? (PTE->PSOR |= MASK(D7)): (PTE->PCOR |= MASK(D7)));
 }
+
 uint8_t LCD_IO_GetVal()
 {
 	uint8_t temp;
-	temp  = (PTE->PDIR & MASK(D5))<<7;
-	temp |= (PTE->PDIR & MASK(D6))<<6;
-	temp |= (PTE->PDIR & MASK(D7))<<5;
-	temp |= (PTE->PDIR & MASK(D8))<<4;
-	E_PutVal(0);
-	E_PutVal(1);
-	temp = (PTE->PDIR & MASK(D5))<<3;
+	
+	(void)((PTE->PDIR & MASK(D7)) ? (temp |=MASK(3)): (temp &=~MASK(3)));
+	(void)((PTE->PDIR & MASK(D6)) ? (temp |=MASK(2)): (temp &=~MASK(2)));
+	(void)((PTE->PDIR & MASK(D5)) ? (temp |=MASK(1)): (temp &=~MASK(1)));
+	(void)((PTE->PDIR & MASK(D4)) ? (temp |=MASK(0)): (temp &=~MASK(0)));
+	/*
+	temp =  (PTE->PDIR & MASK(D7))<<3;
 	temp |= (PTE->PDIR & MASK(D6))<<2;
-	temp |= (PTE->PDIR & MASK(D7))<<1;
-	temp |= (PTE->PDIR & MASK(D8));
-
+	temp |= (PTE->PDIR & MASK(D5))<<1;
+	temp |= (PTE->PDIR & MASK(D4));
+*/
 	return temp;
 }
 
@@ -56,7 +42,7 @@ uint8_t LCD_ReadNibble(void) {
 	
 	Set_Input;
 	E_PutVal(1);
-	temp = //read;
+	temp = LCD_IO_GetVal();
 	E_PutVal(0);
 	Set_Output;	
 	return temp;
@@ -76,7 +62,7 @@ uint8_t LCD_CheckStatus(void){
 void LCD_WriteNibble(uint8_t Data){
 
 	E_PutVal(1);
-	LCD_IO_PutVal((uint8_t)(Data));
+	LCD_IO_PutVal(Data);
 	E_PutVal(0);
 
 }
@@ -113,22 +99,8 @@ void LCD_WriteCommand(uint8_t command){
 
 void LCD_Init(void){
 
-                
-	_delay_ms(50);                            // 50ms dla ustabilizowania siê napiêcia zasilania
-	
-	PORTE->PCR[5] = PORT_PCR_MUX(1);            		// Set Pins to GPIO function
-	PORTE->PCR[20] = PORT_PCR_MUX(1);								// TODO: U can do it better !
-	PORTE->PCR[21] = PORT_PCR_MUX(1);
-	PORTE->PCR[22] = PORT_PCR_MUX(1);
-	PORTE->PCR[23] = PORT_PCR_MUX(1);
-	PORTE->PCR[29] = PORT_PCR_MUX(1);
-	PORTE->PCR[30] = PORT_PCR_MUX(1);
-
-	PTE->PDDR	|= MASK(D5)| MASK(D6) 					// Set output
-						|  MASK(D7)| MASK(D8)
-						|  MASK(E) | MASK(RS)
-						|  MASK(RW);
-	                                           // start initialization
+	_delay_ms(1000);                            // 50ms dla ustabilizowania siê napiêcia zasilania
+																							// start initialization
 	                                                 
 	LCD_WriteCommand((uint8_t)LCD_INIT);
 	_delay_ms(1);                              // 1ms, minimum 39us

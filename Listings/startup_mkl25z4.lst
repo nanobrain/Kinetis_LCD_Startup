@@ -565,12 +565,12 @@ ARM Macro Assembler    Page 9
               00000000 
               00000400 
               00000000 
-Command Line: --debug --xref --cpu=Cortex-M0+ --apcs=interwork --depend=.\objec
-ts\startup_mkl25z4.d -o.\objects\startup_mkl25z4.o -IC:\Users\dude\Documents\Gi
-tHub\STARTUP\RTE -ID:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Inclu
-de -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__UV
-ISION_VERSION SETA 513" --predefine="MKL25Z128xxx4 SETA 1" --list=.\listings\st
-artup_mkl25z4.lst Listings\startup_MKL25Z4.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\objects\startup_mkl25z4.d -o.\objects\startup_mkl25z4.o -IC:\Us
+ers\Natalia\Documents\GitHub\fsdfsdf\RTE -IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLx
+x_DFP\1.6.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL S
+ETA 1" --predefine="__UVISION_VERSION SETA 514" --predefine="MKL25Z128xxx4 SETA
+ 1" --list=.\listings\startup_mkl25z4.lst Listings\startup_MKL25Z4.s
 
 
 

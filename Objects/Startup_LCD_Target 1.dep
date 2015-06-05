@@ -1,132 +1,132 @@
 Dependencies for Project 'Startup_LCD', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Listings\fsl_device_registers.h)(0x556B53C5)()
-F (.\Listings\HD44780.c)(0x556D74B5)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections -I.\Listings-I C:\Users\dude\Documents\GitHub\STARTUP\RTE-I D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DMKL25Z128xxx4-o .\objects\hd44780.o --omf_browse .\objects\hd44780.crf --depend .\objects\hd44780.d)
-I (Listings\fsl_device_registers.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4.h)(0x556B53C5)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54766380)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cm0plus.h)(0x53FC944A)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cmInstr.h)(0x53FF551A)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cmFunc.h)(0x53FF551A)
-I (Listings\device/MKL25Z4/system_MKL25Z4.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_adc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/fsl_bitaccess.h)(0x556B53C5)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54766380)
-I (Listings\device/MKL25Z4/MKL25Z4_cmp.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dac.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dma.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dmamux.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_fgpio.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_ftfa.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_gpio.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_i2c.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_llwu.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_lptmr.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mcg.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mcm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mtb.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mtbdwt.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_nv.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_osc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_pit.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_pmc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_port.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rcm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rom.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rtc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_sim.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_smc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_spi.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_tpm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_tsi.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_uart.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_uart0.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_usb.h)(0x556B53C5)
-I (Listings\Declarations.h)(0x556CA986)
-I (Listings\HD44780.h)(0x556D74BE)
-F (.\Listings\HD44780.h)(0x556D74BE)()
-F (.\Listings\main.c)(0x556D7544)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections -I.\Listings-I C:\Users\dude\Documents\GitHub\STARTUP\RTE-I D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DMKL25Z128xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (Listings\fsl_device_registers.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4.h)(0x556B53C5)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54766380)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cm0plus.h)(0x53FC944A)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cmInstr.h)(0x53FF551A)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cmFunc.h)(0x53FF551A)
-I (Listings\device/MKL25Z4/system_MKL25Z4.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_adc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/fsl_bitaccess.h)(0x556B53C5)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54766380)
-I (Listings\device/MKL25Z4/MKL25Z4_cmp.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dac.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dma.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dmamux.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_fgpio.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_ftfa.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_gpio.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_i2c.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_llwu.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_lptmr.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mcg.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mcm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mtb.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mtbdwt.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_nv.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_osc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_pit.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_pmc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_port.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rcm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rom.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rtc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_sim.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_smc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_spi.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_tpm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_tsi.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_uart.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_uart0.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_usb.h)(0x556B53C5)
-I (Listings\Declarations.h)(0x556CA986)
-I (Listings\HD44780.h)(0x556D74BE)
-F (.\Listings\startup_MKL25Z4.s)(0x556B53C6)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Users\dude\Documents\GitHub\STARTUP\RTE-I D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 513" --pd "MKL25Z128xxx4 SETA 1"--list .\listings\startup_mkl25z4.lst --xref -o .\objects\startup_mkl25z4.o --depend .\objects\startup_mkl25z4.d)
-F (.\Listings\system_MKL25Z4.c)(0x556CA22F)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections -I.\Listings-I C:\Users\dude\Documents\GitHub\STARTUP\RTE-I D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="513" -DMKL25Z128xxx4-o .\objects\system_mkl25z4.o --omf_browse .\objects\system_mkl25z4.crf --depend .\objects\system_mkl25z4.d)
-I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54766380)
-I (Listings\fsl_device_registers.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4.h)(0x556B53C5)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cm0plus.h)(0x53FC944A)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cmInstr.h)(0x53FF551A)
-I (D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.4.0\Device\Include\core_cmFunc.h)(0x53FF551A)
-I (Listings\device/MKL25Z4/system_MKL25Z4.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_adc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/fsl_bitaccess.h)(0x556B53C5)
-I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54766380)
-I (Listings\device/MKL25Z4/MKL25Z4_cmp.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dac.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dma.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_dmamux.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_fgpio.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_ftfa.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_gpio.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_i2c.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_llwu.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_lptmr.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mcg.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mcm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mtb.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_mtbdwt.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_nv.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_osc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_pit.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_pmc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_port.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rcm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rom.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_rtc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_sim.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_smc.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_spi.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_tpm.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_tsi.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_uart.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_uart0.h)(0x556B53C5)
-I (Listings\device/MKL25Z4/MKL25Z4_usb.h)(0x556B53C5)
-F (.\Listings\Declarations.h)(0x556CA986)()
+F (.\Listings\fsl_device_registers.h)(0x556F4170)()
+F (.\Listings\HD44780.c)(0x55718867)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections -I.\Listings-I C:\Users\Natalia\Documents\GitHub\fsdfsdf\RTE-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DMKL25Z128xxx4-o .\objects\hd44780.o --omf_browse .\objects\hd44780.crf --depend .\objects\hd44780.d)
+I (Listings\fsl_device_registers.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4.h)(0x556F4170)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (.\Listings\core_cm0plus.h)(0x5452BE50)
+I (.\Listings\core_cmInstr.h)(0x5452BE50)
+I (.\Listings\core_cmFunc.h)(0x5452BE50)
+I (Listings\device/MKL25Z4/system_MKL25Z4.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_adc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/fsl_bitaccess.h)(0x556F4170)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (Listings\device/MKL25Z4/MKL25Z4_cmp.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dac.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dma.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dmamux.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_fgpio.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_ftfa.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_gpio.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_i2c.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_llwu.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_lptmr.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mcg.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mcm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mtb.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mtbdwt.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_nv.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_osc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_pit.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_pmc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_port.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rcm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rom.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rtc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_sim.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_smc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_spi.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_tpm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_tsi.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_uart.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_uart0.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_usb.h)(0x556F4170)
+I (Listings\Declarations.h)(0x55717E5C)
+I (Listings\HD44780.h)(0x557181E4)
+F (.\Listings\HD44780.h)(0x557181E4)()
+F (.\Listings\main.c)(0x55717C92)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections -I.\Listings-I C:\Users\Natalia\Documents\GitHub\fsdfsdf\RTE-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DMKL25Z128xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (Listings\fsl_device_registers.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4.h)(0x556F4170)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (.\Listings\core_cm0plus.h)(0x5452BE50)
+I (.\Listings\core_cmInstr.h)(0x5452BE50)
+I (.\Listings\core_cmFunc.h)(0x5452BE50)
+I (Listings\device/MKL25Z4/system_MKL25Z4.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_adc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/fsl_bitaccess.h)(0x556F4170)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (Listings\device/MKL25Z4/MKL25Z4_cmp.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dac.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dma.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dmamux.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_fgpio.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_ftfa.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_gpio.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_i2c.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_llwu.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_lptmr.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mcg.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mcm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mtb.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mtbdwt.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_nv.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_osc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_pit.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_pmc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_port.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rcm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rom.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rtc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_sim.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_smc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_spi.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_tpm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_tsi.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_uart.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_uart0.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_usb.h)(0x556F4170)
+I (Listings\Declarations.h)(0x55717E5C)
+I (Listings\HD44780.h)(0x557181E4)
+F (.\Listings\startup_MKL25Z4.s)(0x556F4170)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Users\Natalia\Documents\GitHub\fsdfsdf\RTE-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "MKL25Z128xxx4 SETA 1"--list .\listings\startup_mkl25z4.lst --xref -o .\objects\startup_mkl25z4.o --depend .\objects\startup_mkl25z4.d)
+F (.\Listings\system_MKL25Z4.c)(0x556F4170)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections -I.\Listings-I C:\Users\Natalia\Documents\GitHub\fsdfsdf\RTE-I C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DMKL25Z128xxx4-o .\objects\system_mkl25z4.o --omf_browse .\objects\system_mkl25z4.crf --depend .\objects\system_mkl25z4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (Listings\fsl_device_registers.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4.h)(0x556F4170)
+I (.\Listings\core_cm0plus.h)(0x5452BE50)
+I (.\Listings\core_cmInstr.h)(0x5452BE50)
+I (.\Listings\core_cmFunc.h)(0x5452BE50)
+I (Listings\device/MKL25Z4/system_MKL25Z4.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_adc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/fsl_bitaccess.h)(0x556F4170)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (Listings\device/MKL25Z4/MKL25Z4_cmp.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dac.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dma.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_dmamux.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_fgpio.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_ftfa.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_gpio.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_i2c.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_llwu.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_lptmr.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mcg.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mcm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mtb.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_mtbdwt.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_nv.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_osc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_pit.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_pmc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_port.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rcm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rom.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_rtc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_sim.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_smc.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_spi.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_tpm.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_tsi.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_uart.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_uart0.h)(0x556F4170)
+I (Listings\device/MKL25Z4/MKL25Z4_usb.h)(0x556F4170)
+F (.\Listings\Declarations.h)(0x55717E5C)()
